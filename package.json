@@ -1,6 +1,6 @@
 {
-  "name": "libraries",
-  "version": "0.0.0",
+  "name": "ngx-embed-video",
+  "version": "1.1.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
