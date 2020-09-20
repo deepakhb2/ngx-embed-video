@@ -3,12 +3,6 @@
 > Get embed code for embedding youtube/vimeo/dailymotion/\* video in websites from URL or ID in Angular 7+ (Tested on 9/10).
 > Currently supports YouTube, Vimeo and Dailymotion. Feel free to make pull request to add others!
 
-[![npm-url][npm-url-svg]][npm-url]
-[![npm-url][down-url-svg]][npm-url]
-[![npm-url][down-url-dw-svg]][npm-url]
-[![build-url][build-url-svg]][build-url]
-[![Dependencies][dependencies]][dependencies-url]
-
 Play with `ngx-embed-video` live on [stackblitz.com/ngx-embed-video-example](https://stackblitz.com/edit/ngx-embed-video-example).
 
 ## Installation
