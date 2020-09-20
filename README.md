@@ -13,22 +13,22 @@ Play with `ngx-embed-video` live on [stackblitz.com/ngx-embed-video-example](htt
 
 ## Installation
 
-To install ngx-embed-video library, run:
+To install @deepakhb2/ngx-embed-video library, run:
 
 ```bash
-$ npm install ngx-embed-video --save
+$ npm install @deepakhb2/ngx-embed-video --save
 ```
 
-## Consuming EmbedVideo library
+## Consuming NgxEmbedVideo library
 
 and then in your Angular `AppModule`:
 
 ```typescript
 import { HttpClientModule } from '@angular/common/http';
-import { EmbedVideo } from 'ngx-embed-video';
+import { NgxEmbedVideoModule, NgxEbedVideoService } from 'deepakhb2/ngx-embed-video';
 
 @NgModule({
-  imports: [HttpClientModule, EmbedVideo.forRoot()]
+  imports: [NgxEmbedVideoModule]
 })
 export class AppModule {}
 ```
@@ -39,7 +39,7 @@ Example usage:
 
 ```typescript
 import { Component } from '@angular/core';
-import { EmbedVideoService } from 'ngx-embed-video';
+import { NgxEmbedVideoService } from 'deepakhb2/ngx-embed-video';
 
 @Component({
   selector: 'app-component',
@@ -55,7 +55,7 @@ export class AppComponent {
   youtubeId = 'iHhcHTlGtRs';
   dailymotionId = 'x20qnej';
 
-  constructor(private embedService: EmbedVideoService) {
+  constructor(private embedService: NgxEmbedVideoService) {
     console.log(this.embedService.embed(this.vimeoUrl));
     console.log(this.embedService.embed(this.youtubeUrl));
     console.log(this.embedService.embed(this.dailymotionUrl));
@@ -111,7 +111,7 @@ Example usage with sanitized innerHtml iframe:
 
 ```typescript
 import { Component } from '@angular/core';
-import { EmbedVideoService } from 'ngx-embed-video';
+import { NgxEmbedVideoService } from '@deepakhb2/ngx-embed-video';
 
 @Component({
   selector: 'app-component',
@@ -122,7 +122,7 @@ export class AppComponent {
   youtubeUrl = "https://www.youtube.com/watch?v=iHhcHTlGtRs";
 
   constructor(
-    private embedService: EmbedVideoService
+    private embedService: NgxEmbedVideoService
   ) {
     this.iframe_html = this.embedService.embed(youtubeUrl);
   )
