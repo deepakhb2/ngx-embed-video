@@ -1,6 +1,6 @@
 {
   "name": "@deepakhb2/ngx-embed-video",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -26,7 +26,8 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/deepakhb2/ngx-embed-video/tree/v1.1.0"
+    "url": "git+ssh://git@github.com/deepakhb2/ngx-embed-video.git",
+    "directory": "projects/ngx-embed-video"
   },
   "author": {
     "name": "Deepak HB",
